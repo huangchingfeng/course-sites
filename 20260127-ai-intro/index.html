@@ -1210,38 +1210,26 @@
                 <div class="tool-card animate slide-left">
                     <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg></div>
                     <div>
-                        <h3 class="tool-name">Gemini</h3>
-                        <p class="tool-desc">與 Google 生態系深度整合，擅長搜尋、分析 YouTube 影片。</p>
+                        <h3 class="tool-name">Gemini + Canvas</h3>
+                        <p class="tool-desc">與 Google 生態系深度整合。Canvas 功能可編輯文字並匯出 Google Doc / Google Slides，做簡報首選。</p>
                         <div class="tool-tags">
                             <span class="tool-tag">Google 整合</span>
-                            <span class="tool-tag">YouTube 分析</span>
+                            <span class="tool-tag">Canvas 可編輯</span>
                             <span class="tool-tag">製作簡報</span>
                             <span class="tool-tag">Deep Research</span>
                         </div>
                     </div>
                 </div>
                 <div class="tool-card animate slide-left">
-                    <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></div>
-                    <div>
-                        <h3 class="tool-name">Grok</h3>
-                        <p class="tool-desc">X (Twitter) 整合，即時性強，適合追蹤時事與熱門話題。</p>
-                        <div class="tool-tags">
-                            <span class="tool-tag">即時資訊</span>
-                            <span class="tool-tag">社群趨勢</span>
-                            <span class="tool-tag">Deep Search</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="tool-card animate slide-left">
                     <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                     <div>
-                        <h3 class="tool-name">Claude</h3>
-                        <p class="tool-desc">邏輯嚴謹，適合長文分析、專業文件處理，回答品質高。</p>
+                        <h3 class="tool-name">Claude + Claude Code</h3>
+                        <p class="tool-desc">邏輯嚴謹，適合長文分析、專業文件處理。Claude Code 可直接操作電腦，清理 100GB 硬碟空間。</p>
                         <div class="tool-tags">
                             <span class="tool-tag">長文分析</span>
-                            <span class="tool-tag">專業文件</span>
                             <span class="tool-tag">邏輯推理</span>
                             <span class="tool-tag">程式開發</span>
+                            <span class="tool-tag">操作電腦</span>
                         </div>
                     </div>
                 </div>
@@ -1268,6 +1256,18 @@
                             <span class="tool-tag">製作簡報</span>
                             <span class="tool-tag">學習卡</span>
                             <span class="tool-tag">Podcast</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-card animate slide-left">
+                    <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg></div>
+                    <div>
+                        <h3 class="tool-name">會進入小幫手</h3>
+                        <p class="tool-desc">台灣製語音轉文字工具，免費 1 小時限制，付費 199/月。搭配 AI 整理會議記錄的好幫手。</p>
+                        <div class="tool-tags">
+                            <span class="tool-tag">語音轉文字</span>
+                            <span class="tool-tag">台灣製造</span>
+                            <span class="tool-tag">會議記錄</span>
                         </div>
                     </div>
                 </div>
@@ -1298,10 +1298,12 @@
                     </ul>
                 </div>
                 <div class="security-card animate fade-up">
-                    <h4 class="security-title">善用企業版</h4>
+                    <h4 class="security-title">善用企業版 & 小心中國 AI</h4>
                     <ul class="security-list">
                         <li>企業版有資料保護機制</li>
                         <li>個人版對話可能用於訓練</li>
+                        <li>中國 AI（寂夢、SkyWork）很多企業禁用</li>
+                        <li>AI 錄音筆多為中國公司製造，資安有疑慮</li>
                     </ul>
                 </div>
             </div>
@@ -1329,22 +1331,27 @@
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h4 class="step-title">轉逐字稿</h4>
-                        <p class="step-desc">使用 Whisper、剪映、或其他語音轉文字工具</p>
-                        <div class="step-tip">NotebookLM 可以直接上傳音訊檔自動轉錄</div>
+                        <p class="step-desc">使用 Whisper（最強語音轉文字）、會進入小幫手（台灣製，免費 1 小時）</p>
+                        <div class="step-tip">NotebookLM 可以直接上傳音訊檔自動轉錄，省去這一步</div>
                     </div>
                 </div>
                 <div class="workflow-step animate slide-left">
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h4 class="step-title">AI 整理</h4>
-                        <p class="step-desc">把逐字稿丟給 ChatGPT / Claude / NotebookLM</p>
+                        <p class="step-desc">用「角色/情境/期望」指令讓 AI 整理會議記錄</p>
                         <div class="step-example">
                             <strong>提示詞範例：</strong><br>
-                            「請整理這份會議記錄，列出：<br>
-                            1. 會議結論<br>
-                            2. 待辦事項（含負責人與時間）<br>
-                            3. 重要討論點」
+                            「你是一位<strong>專業秘書</strong>（角色），以下是<strong>今天部門會議的逐字稿</strong>（情境），請幫我整理成<strong>會議記錄，包含：1. 會議結論 2. 待辦事項（含負責人與時間）3. 重要討論點</strong>（期望）」
                         </div>
+                    </div>
+                </div>
+                <div class="workflow-step animate slide-left">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Gemini Canvas 編輯</h4>
+                        <p class="step-desc">開啟 Canvas 功能，可直接編輯文字、調整格式，匯出 Google Doc</p>
+                        <div class="step-tip">表格和文字可以分開修改，比直接在對話中修改更方便</div>
                     </div>
                 </div>
             </div>
@@ -1356,7 +1363,7 @@
         <div class="container">
             <div class="section-header animate fade-up">
                 <div class="section-label" data-i18n="notebook.label">深度介紹</div>
-                <h2 class="section-title" data-i18n="notebook.title">NotebookLM 九大功能</h2>
+                <h2 class="section-title" data-i18n="notebook.title">NotebookLM 八大功能</h2>
                 <p class="section-subtitle" data-i18n="notebook.subtitle">知識來源限定於你上傳的檔案，比較不會有幻覺問題</p>
             </div>
             <div class="feature-grid">
@@ -1400,11 +1407,6 @@
                     <h4 class="feature-name">摘要/評論</h4>
                     <p class="feature-desc">快速了解內容重點</p>
                 </div>
-                <div class="feature-card animate fade-up">
-                    <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
-                    <h4 class="feature-name">辯論</h4>
-                    <p class="feature-desc">多角度分析議題</p>
-                </div>
             </div>
         </div>
     </section>
@@ -1419,28 +1421,96 @@
             </div>
             <div class="manus-grid">
                 <div class="manus-card animate fade-up">
-                    <h4 class="manus-title">做簡報</h4>
-                    <p class="manus-desc">自動研究公司風格，做出符合 CIS 的簡報</p>
+                    <h4 class="manus-title">做簡報（核心功能）</h4>
+                    <p class="manus-desc">自動研究公司風格，做出符合 CIS 的簡報。可下載 PPT / PDF / Google Slides，完全可編輯。</p>
                     <div class="manus-case"><strong>案例：</strong>全家便利商店提案，95% 由 AI 完成，只調整字體大小</div>
                 </div>
                 <div class="manus-card animate fade-up">
-                    <h4 class="manus-title">爬資料</h4>
-                    <p class="manus-desc">可爬取全球廠商資訊、聯絡人 Email</p>
-                    <div class="manus-case"><strong>案例：</strong>藥品代理商名單，爬取德國、英國、法國代理商含 Email</div>
-                </div>
-                <div class="manus-card animate fade-up">
-                    <h4 class="manus-title">公司調查</h4>
-                    <p class="manus-desc">調查公司背景、股權結構、關鍵人物</p>
-                    <div class="manus-case"><strong>案例：</strong>調查香港公司背景，花 5 塊台幣，15 分鐘產出完整報告</div>
+                    <h4 class="manus-title">公司背景</h4>
+                    <p class="manus-desc">中國人創辦 → 新加坡註冊 → 被 Meta 收購。中國仿製版叫 AiGEN（阿里巴巴出品）。</p>
+                    <div class="manus-case"><strong>注意：</strong>AiGEN、SkyWork 等中國 AI 有資安疑慮，建議使用原版 Manus</div>
                 </div>
                 <div class="manus-card animate fade-up">
                     <h4 class="manus-title">做網站</h4>
                     <p class="manus-desc">可建立多語言網站</p>
-                    <div class="manus-case"><strong>案例：</strong>阿峰老師官網，花 12000 元做出多語言網站</div>
+                    <div class="manus-case"><strong>案例：</strong>阿峰老師官網，花 12,000 元做出多語言網站</div>
+                </div>
+                <div class="manus-card animate fade-up">
+                    <h4 class="manus-title">付費技巧</h4>
+                    <p class="manus-desc">刷卡後立即取消自動續訂，給每個 AI 一個月試用期，真的有幫助再續訂。</p>
+                    <div class="manus-case"><strong>費用：</strong>免費每天 300 點 / 一份簡報約 250 點 / 付費版約 6,000 元/月</div>
                 </div>
             </div>
-            <div class="tip-box animate fade-up">
-                <strong>費用參考：</strong>免費每天 300 點（約 40-50 台幣）/ 一份簡報約 150-300 點 / 付費版約 6000 元/月
+        </div>
+    </section>
+
+    <!-- AI 簡報三大工具 -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <div class="section-label">下午核心主軸</div>
+                <h2 class="section-title">AI 簡報三大工具比較</h2>
+                <p class="section-subtitle">做簡報是今天下午的重點教學，三種工具各有優缺點</p>
+            </div>
+            <table class="comparison-table animate fade-up">
+                <tr>
+                    <th style="width: 20%;">工具</th>
+                    <th style="width: 25%;">格式</th>
+                    <th style="width: 20%;">費用</th>
+                    <th style="width: 35%;">特色</th>
+                </tr>
+                <tr>
+                    <td><strong>NotebookLM</strong></td>
+                    <td>圖片格式（不可編輯）</td>
+                    <td>免費吃到飽</td>
+                    <td>基於你的資料生成，不會亂掰</td>
+                </tr>
+                <tr>
+                    <td><strong>Manus</strong></td>
+                    <td>PPT / PDF / Google Slides（可編輯）</td>
+                    <td>一份約 250 點</td>
+                    <td>自動研究 CIS，最精美</td>
+                </tr>
+                <tr>
+                    <td><strong>Gemini Canvas</strong></td>
+                    <td>Google Slides（可下載 PPT）</td>
+                    <td>免費</td>
+                    <td>魔法咒語：「請幫我製作成 Google Slide，並且是可以下載的那種」</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Google Workspace AI -->
+    <section style="background: var(--bg); padding: 80px 0;">
+        <div class="container">
+            <div class="section-header animate fade-up">
+                <div class="section-label">新功能</div>
+                <h2 class="section-title">Google Workspace AI 功能</h2>
+                <p class="section-subtitle">Google 已經把 AI 整合到你每天在用的工具裡</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card animate slide-left">
+                    <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>
+                    <div>
+                        <h3 class="tool-name">Google Sheets</h3>
+                        <p class="tool-desc">AI 按鈕可自動生成表格、圖片、公式、資料透視表，還能用自然語言描述需求。</p>
+                    </div>
+                </div>
+                <div class="tool-card animate slide-left">
+                    <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                    <div>
+                        <h3 class="tool-name">Gmail</h3>
+                        <p class="tool-desc">AI 自動回覆郵件 + 從信件內容直接建立行事曆排程，一鍵完成。</p>
+                    </div>
+                </div>
+                <div class="tool-card animate slide-left">
+                    <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div>
+                    <div>
+                        <h3 class="tool-name">Google Slides</h3>
+                        <p class="tool-desc">「美畫這張投影片」按鈕，AI 自動美化簡報設計。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1457,15 +1527,16 @@
                     <th style="width: 40%;">我想要...</th>
                     <th>推薦工具</th>
                 </tr>
-                <tr><td>創意發想、腦力激盪</td><td>ChatGPT、Gemini、Grok、Claude</td></tr>
+                <tr><td>創意發想、腦力激盪</td><td>ChatGPT、Gemini、Claude</td></tr>
                 <tr><td>找資料要有來源</td><td>Perplexity</td></tr>
-                <tr><td>深度研究報告</td><td>Gemini Deep Research、Grok Deep Search</td></tr>
-                <tr><td>會議記錄整理</td><td>NotebookLM（直接上傳錄音檔）</td></tr>
-                <tr><td>做漂亮簡報</td><td>NotebookLM、Manus</td></tr>
-                <tr><td>做可編輯簡報</td><td>Gemini（Google Slide）、Manus</td></tr>
-                <tr><td>公司/人物調查</td><td>Manus</td></tr>
+                <tr><td>深度研究報告</td><td>Gemini Deep Research</td></tr>
+                <tr><td>會議記錄整理</td><td>NotebookLM（直接上傳錄音檔）+ Gemini Canvas 編輯</td></tr>
+                <tr><td>做漂亮簡報（圖片格式）</td><td>NotebookLM（免費吃到飽）</td></tr>
+                <tr><td>做可編輯簡報</td><td>Gemini Canvas（免費）、Manus（可下載 PPT）</td></tr>
+                <tr><td>語音轉文字</td><td>Whisper（最強）、會進入小幫手（台灣製、免費 1 小時）</td></tr>
                 <tr><td>教育訓練教材</td><td>NotebookLM（學習卡、測驗）</td></tr>
                 <tr><td>資料分析比較（不會亂掰）</td><td>NotebookLM</td></tr>
+                <tr><td>操作電腦、自動化</td><td>Claude Code</td></tr>
             </table>
         </div>
     </section>
@@ -1536,13 +1607,13 @@
                     <span class="resource-link">前往 →</span>
                 </a>
                 <a href="https://gemini.google.com" target="_blank" rel="noopener" class="resource-card animate fade-up">
-                    <h3 class="resource-name">Gemini</h3>
-                    <p class="resource-desc">Google 生態系整合，可做簡報</p>
+                    <h3 class="resource-name">Gemini + Canvas</h3>
+                    <p class="resource-desc">做簡報首選，Canvas 可編輯匯出</p>
                     <span class="resource-link">前往 →</span>
                 </a>
                 <a href="https://claude.ai" target="_blank" rel="noopener" class="resource-card animate fade-up">
                     <h3 class="resource-name">Claude</h3>
-                    <p class="resource-desc">邏輯嚴謹，適合長文分析</p>
+                    <p class="resource-desc">邏輯嚴謹，Claude Code 可操作電腦</p>
                     <span class="resource-link">前往 →</span>
                 </a>
                 <a href="https://perplexity.ai" target="_blank" rel="noopener" class="resource-card animate fade-up">
@@ -1711,7 +1782,7 @@
                 'workflow.title': '會議記錄 AI 工作流',
                 'workflow.subtitle': '最容易上手的 AI 應用場景',
                 'notebook.label': '深度介紹',
-                'notebook.title': 'NotebookLM 九大功能',
+                'notebook.title': 'NotebookLM 八大功能',
                 'notebook.subtitle': '知識來源限定於你上傳的檔案，比較不會有幻覺問題',
                 'manus.label': '進階工具',
                 'manus.title': 'Manus — AI 特助神器',
@@ -1780,7 +1851,7 @@
                 'workflow.title': 'AI Workflow for Meeting Notes',
                 'workflow.subtitle': 'The easiest AI application to get started with',
                 'notebook.label': 'DEEP DIVE',
-                'notebook.title': 'NotebookLM: 9 Key Features',
+                'notebook.title': 'NotebookLM: 8 Key Features',
                 'notebook.subtitle': 'Knowledge sourced only from your uploaded files—less hallucination',
                 'manus.label': 'ADVANCED TOOL',
                 'manus.title': 'Manus — AI Executive Assistant',
