@@ -535,7 +535,7 @@
                         <div class="info-icon">👥</div>
                         <div>
                             <div class="info-label">對象分會</div>
-                            <div class="info-value">華日 / 華市集 / 華影視</div>
+                            <div class="info-value">華日 / 華市集 / 華影視 / 華外貿</div>
                         </div>
                     </div>
                 </div>
@@ -548,7 +548,7 @@
         <div class="container">
             <div class="welcome-highlight">
                 <h3>2026，歡迎加入華字輩大家庭！</h3>
-                <p>華日、華市集、華影視 — 我們一起學習、一起成長、一起引薦更多商機</p>
+                <p>華日、華市集、華影視、華外貿 — 我們一起學習、一起成長、一起引薦更多商機</p>
             </div>
 
             <div class="intro-card">
@@ -586,7 +586,14 @@
                             <option value="華日">華日</option>
                             <option value="華市集">華市集</option>
                             <option value="華影視">華影視</option>
+                            <option value="華外貿">華外貿</option>
+                            <option value="其他">其他（自行填寫）</option>
                         </select>
+                    </div>
+
+                    <div class="form-group" id="otherChapterGroup" style="display: none;">
+                        <label>請輸入分會名稱 <span class="required">*</span></label>
+                        <input type="text" id="otherChapter" name="otherChapter" placeholder="例如：華創">
                     </div>
 
                     <div class="form-group">
@@ -648,7 +655,7 @@
         // 部署 GAS Web App 後，將網址貼在這裡
         const GAS_URL = 'https://script.google.com/macros/s/AKfycbzwB94T2GQfu7LGB_LzVACIRLYm0gpzhvTfdUDopHQLmvX6JIo2BpGarxN9IAQDZpJL/exec';
 
-        const CHAPTERS = ['華日', '華市集', '華影視'];
+        const CHAPTERS = ['華日', '華市集', '華影視', '華外貿', '其他'];
 
         // ====== 載入統計 ======
         async function loadStats() {
@@ -687,6 +694,22 @@
             document.getElementById('statsList').innerHTML = html;
         }
 
+        // ====== 分會選擇處理 ======
+        const chapterSelect = document.getElementById('chapter');
+        const otherChapterGroup = document.getElementById('otherChapterGroup');
+        const otherChapterInput = document.getElementById('otherChapter');
+
+        chapterSelect.addEventListener('change', function() {
+            if (this.value === '其他') {
+                otherChapterGroup.style.display = 'block';
+                otherChapterInput.required = true;
+            } else {
+                otherChapterGroup.style.display = 'none';
+                otherChapterInput.required = false;
+                otherChapterInput.value = '';
+            }
+        });
+
         // ====== 表單送出 ======
         const form = document.getElementById('registrationForm');
         const submitBtn = document.getElementById('submitBtn');
@@ -707,11 +730,21 @@
             hideMessage();
 
             const name = document.getElementById('name').value.trim();
-            const chapter = document.getElementById('chapter').value;
+            let chapter = document.getElementById('chapter').value;
             const phone = document.getElementById('phone').value.trim();
             const email = document.getElementById('email').value.trim();
             const confirmCamera = document.getElementById('confirmCamera').checked;
             const confirmAttend = document.getElementById('confirmAttend').checked;
+
+            // 如果選擇「其他」，使用自訂輸入的分會名稱
+            if (chapter === '其他') {
+                const otherChapter = document.getElementById('otherChapter').value.trim();
+                if (!otherChapter) {
+                    showMessage('請輸入分會名稱', 'error');
+                    return;
+                }
+                chapter = otherChapter;
+            }
 
             // 前端驗證
             if (!name || !chapter || !phone || !email) {
